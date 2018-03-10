@@ -11,7 +11,7 @@ import { Data } from '../../providers/data/data';
 })
 export class HomePage {
 
-  public items;
+  public items = [];
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public dataService: Data) {
     this.dataService.getData().then((todos) => {
